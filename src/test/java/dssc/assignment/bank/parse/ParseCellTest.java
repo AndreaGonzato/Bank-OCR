@@ -79,4 +79,22 @@ public class ParseCellTest {
         assertEquals("7", new Cell(sevenAsText).toString());
     }
 
+    @Test
+    void eightCell() {
+        String threeAsText =
+                        " _ " +
+                        "|_|" +
+                        "|_|";
+        assertEquals("8", new Cell(threeAsText).toString());
+    }
+
+    @Test
+    void nineCell() {
+        String threeAsText =
+                        " _ " +
+                        "|_|" +
+                        " _|";
+        assertEquals("9", new Cell(threeAsText).toString());
+    }
+
 }

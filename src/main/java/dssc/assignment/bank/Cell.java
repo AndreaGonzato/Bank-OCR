@@ -42,6 +42,18 @@ public class Cell {
                     "  |" +
                     "  |";
 
+    private static final String EIGHT_CELL =
+                    " _ " +
+                    "|_|" +
+                    "|_|";
+
+    private static final String NINE_CELL =
+                    " _ " +
+                    "|_|" +
+                    " _|";
+
+
+
     private String cellAsText;
 
     public Cell(String cellAsText) {
@@ -60,9 +72,11 @@ public class Cell {
             case FIVE_CELL: return "5";
             case SIX_CELL: return "6";
             case SEVEN_CELL: return "7";
+            case EIGHT_CELL: return "8";
+            case NINE_CELL: return "9";
             default: break;
         }
-        return "7";
+        return null;
 
     }
 }
