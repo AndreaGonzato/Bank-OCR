@@ -6,6 +6,10 @@ public class Cell {
                     " _ " +
                     "| |" +
                     "|_|";
+    private static final String ONE_CELL =
+                    "   " +
+                    "  |" +
+                    "  |";
     private String cellAsText;
 
     public Cell(String cellAsText) {
@@ -14,6 +18,12 @@ public class Cell {
 
     @Override
     public String toString() {
-        return ZERO_CELL.equals(cellAsText) ? "0": "1";
+        if (ZERO_CELL.equals(cellAsText)) {
+            return Integer.toString(0);
+        } else if (ONE_CELL.equals(cellAsText)) {
+            return Integer.toString(1);
+        } else {
+            return Integer.toString(3);
+        }
     }
 }
