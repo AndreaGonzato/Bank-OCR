@@ -21,17 +21,26 @@ public class Cell {
                     " _ " +
                     " _|" +
                     " _|";
+
     private static final String FOUR_CELL =
             "   " +
                     "|_|" +
                     "  |";
-
 
     private static final String FIVE_CELL =
                     " _ " +
                     "|_ " +
                     " _|";
 
+    private static final String SIX_CELL =
+                    " _ " +
+                    "|_ " +
+                    "|_|";
+
+    private static final String SEVEN_CELL =
+                    " _ " +
+                    "  |" +
+                    "  |";
 
     private String cellAsText;
 
@@ -49,6 +58,8 @@ public class Cell {
             case THREE_CELL: return "3";
             case FOUR_CELL: return "4";
             case FIVE_CELL: return "5";
+            case SIX_CELL: return "6";
+            case SEVEN_CELL: return "7";
             default: break;
         }
         return "7";
