@@ -21,8 +21,14 @@ public class PrintAccountNumberTest {
     }
 
     @Test
-    void ZeroAndOnePattern() {
+    void zeroAndOnePattern() {
         Entry entry = new Entry(" _     _     _     _     _ ", "| |  || |  || |  || |  || |", "|_|  ||_|  ||_|  ||_|  ||_|");
         assertEquals("010101010", new AccountNumber(entry).toString());
+    }
+
+    @Test
+    void threeAndSevenEntry() {
+        Entry entry = new Entry(" _  _  _  _  _  _  _  _  _ ", " _|  | _|  | _|  | _|  | _|", " _|  | _|  | _|  | _|  | _|");
+        assertEquals("373737373", new AccountNumber(entry).toString());
     }
 }
