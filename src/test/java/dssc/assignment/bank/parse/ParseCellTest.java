@@ -42,4 +42,13 @@ public class ParseCellTest {
                         " _|";
         assertEquals("3", new Cell(threeAsText).toString());
     }
+
+    @Test
+    void fiveCell() {
+        String fiveAsText =
+                        " _ " +
+                        "|_ " +
+                        " _|";
+        assertEquals("5", new Cell(fiveAsText).toString());
+    }
 }

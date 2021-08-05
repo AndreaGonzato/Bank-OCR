@@ -22,6 +22,11 @@ public class Cell {
                     " _|" +
                     " _|";
 
+    private static final String FIVE_CELL =
+                    " _ " +
+                    "|_ " +
+                    " _|";
+
     private String cellAsText;
 
     public Cell(String cellAsText) {
@@ -36,6 +41,7 @@ public class Cell {
             case ONE_CELL: return "1";
             case TWO_CELL: return "2";
             case THREE_CELL: return "3";
+            case FIVE_CELL: return "5";
             default: break;
         }
         return "7";
