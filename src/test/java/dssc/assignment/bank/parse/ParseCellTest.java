@@ -18,11 +18,20 @@ public class ParseCellTest {
 
     @Test
     void oneCell() {
-        String zeroAsText =
+        String oneAsText =
                         "   " +
                         "  |" +
                         "  |";
-        assertEquals("1", new Cell(zeroAsText).toString());
+        assertEquals("1", new Cell(oneAsText).toString());
+    }
+
+    @Test
+    void twoCell() {
+        String twoAsAText =
+                        " _ " +
+                        " _|" +
+                        "|_ ";
+        assertEquals("2", new Cell(twoAsAText).toString());
     }
 
     @Test

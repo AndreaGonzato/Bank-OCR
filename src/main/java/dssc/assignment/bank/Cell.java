@@ -10,6 +10,14 @@ public class Cell {
                     "   " +
                     "  |" +
                     "  |";
+
+    private static final String TWO_CELL =
+                    " _ " +
+                    " _|" +
+                    "|_ ";
+
+
+
     private String cellAsText;
 
     public Cell(String cellAsText) {
@@ -18,12 +26,13 @@ public class Cell {
 
     @Override
     public String toString() {
-        if (ZERO_CELL.equals(cellAsText)) {
-            return Integer.toString(0);
-        } else if (ONE_CELL.equals(cellAsText)) {
-            return Integer.toString(1);
-        } else {
-            return Integer.toString(3);
+
+        switch (cellAsText){
+            case ZERO_CELL: return "0";
+            case ONE_CELL: return "1";
+            case TWO_CELL: return  "2";
         }
+        return "3";
+
     }
 }
