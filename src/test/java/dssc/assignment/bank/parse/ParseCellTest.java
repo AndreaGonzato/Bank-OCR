@@ -10,7 +10,7 @@ public class ParseCellTest {
     @Test
     void zeroCell() {
         String zeroAsText =
-                        " _ " +
+                " _ " +
                         "| |" +
                         "|_|";
         assertEquals("0", new Cell(zeroAsText).toString());
@@ -19,7 +19,7 @@ public class ParseCellTest {
     @Test
     void oneCell() {
         String oneAsText =
-                        "   " +
+                "   " +
                         "  |" +
                         "  |";
         assertEquals("1", new Cell(oneAsText).toString());
@@ -28,7 +28,7 @@ public class ParseCellTest {
     @Test
     void twoCell() {
         String twoAsAText =
-                        " _ " +
+                " _ " +
                         " _|" +
                         "|_ ";
         assertEquals("2", new Cell(twoAsAText).toString());
@@ -37,7 +37,7 @@ public class ParseCellTest {
     @Test
     void threeCell() {
         String threeAsText =
-                        " _ " +
+                " _ " +
                         " _|" +
                         " _|";
         assertEquals("3", new Cell(threeAsText).toString());
@@ -46,9 +46,19 @@ public class ParseCellTest {
     @Test
     void fiveCell() {
         String fiveAsText =
-                        " _ " +
+                " _ " +
                         "|_ " +
                         " _|";
         assertEquals("5", new Cell(fiveAsText).toString());
     }
+
+    @Test
+    void fourCell() {
+        String threeAsText =
+                "   " +
+                        "|_|" +
+                        "  |";
+        assertEquals("4", new Cell(threeAsText).toString());
+    }
+
 }
