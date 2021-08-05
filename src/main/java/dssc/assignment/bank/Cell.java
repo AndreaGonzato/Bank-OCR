@@ -47,7 +47,7 @@ public class Cell {
             case ONE_CELL: return "1";
             case TWO_CELL: return "2";
             case THREE_CELL: return "3";
-            case FOUR_CELL: return  "4";
+            case FOUR_CELL: return "4";
             case FIVE_CELL: return "5";
             default: break;
         }
