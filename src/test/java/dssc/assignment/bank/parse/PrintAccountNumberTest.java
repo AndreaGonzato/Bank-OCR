@@ -19,4 +19,10 @@ public class PrintAccountNumberTest {
         Entry entry = new Entry("                           ", "  |  |  |  |  |  |  |  |  |", "  |  |  |  |  |  |  |  |  |");
         assertEquals("111111111", new AccountNumber(entry).toString());
     }
+
+    @Test
+    void ZeroAndOnePattern() {
+        Entry entry = new Entry(" _     _     _     _     _ ", "| |  || |  || |  || |  || |", "|_|  ||_|  ||_|  ||_|  ||_|");
+        assertEquals("010101010", new AccountNumber(entry).toString());
+    }
 }

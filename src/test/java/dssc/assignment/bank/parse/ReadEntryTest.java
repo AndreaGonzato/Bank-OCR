@@ -27,4 +27,5 @@ public class ReadEntryTest {
         Entry entry = reader.readEntry();
         assertEquals("111111111", entry.toString());
     }
+
 }
